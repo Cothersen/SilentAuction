@@ -1,0 +1,464 @@
+
+<style type="text/css">
+.form-style-5{
+    max-width: 200px;
+    padding: 10px 10px;
+    background: #f4f7f8;
+   /* margin: 10px auto;*/
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+    border: none;
+	background: red;
+
+}
+.form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form-style-5 label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 20%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+    background: #d2d9dd;
+}
+.form-style-5 select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+.form-style-5 .number {
+    background: #2196F3;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #2196F3;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border: 1px solid #2196F3;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover {
+    background: #2196F3;
+}
+
+</style>
+
+
+body { 
+	font:12pt verdana; 
+	background: #fff;
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+}
+
+.style5{
+	text-align:left;
+	color: #6C88A6
+}
+
+.style6{
+	color: #fff;
+}
+
+.headerFont {
+	color:#fff;
+	font-weight: bold;
+	font: 30pt verdana;
+	text-align: center;
+}
+
+
+h1 {
+	font:20pt verdana, arial, sans-serif;
+	color:#666;
+	margin:0;
+	padding:125px 0 0 10px;
+}
+
+h2 {
+	font:14pt verdana, arial, sans-serif;
+	color:#666;
+	/*padding:10px 10px, 0px 10px; */
+	padding:0px 18px 3px 18px;
+	margin:0;
+	margin-top: 5px;
+    text-align: center;
+}
+
+h3 {
+	font:14pt verdana, arial, sans-serif;
+	color:#666;
+	padding:10px;
+	margin:0;
+    text-align: left;
+}
+
+p { 
+	font: 12pt verdana; 
+	margin: 0; 
+	text-align: justify;
+}
+	
+/*
+	the entire box from header to footer
+	width:90% leaves a margin on the edges
+*/
+#contain {
+	width:90%; 
+	height:auto;
+	border-right:2px solid #2196F3;
+	border-left:2px solid #2196F3;
+	margin-left:auto;
+	margin-right:auto;
+	background: #FFF ;
+}
+
+
+#header {
+    background: #FFF url('http://katnip.pairserver.com/Project/img/banner.png') right;
+	width:100%;
+    height:165px;
+	border-bottom:1px solid #CCC;
+	
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+	text-align:center;
+}
+
+.topnav ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow:hidden;
+	width:100%;
+	text-align: center; 
+}
+
+.topnav li {
+    display: inline;   
+	/*float:left;    /* doing this would make the sidebar start from the left**/
+}
+
+.topnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.topnav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.topnav a:hover:not(.active){
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* entire block for the main menu 
+*/
+#leftcol {
+	width:240px;
+	height:100%;
+	float:left;
+	padding:5px 0 5px 0;
+	background-color: blue;  /* change this to white: #fff) debugging is set to blue*/
+}
+
+#leftcol p {
+
+	padding:3px 18px 3px 18px;
+	margin:0;
+	
+
+}
+
+#navcontainer { width: 90%; }
+
+#navcontainer ul{
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Menu: a for anchor to switch to a different page
+*/
+#navcontainer a
+{
+	display: block;
+	padding: 16px 6px 16px 12px;
+	/*width: 160px;*/
+	width:100%;
+	background-color: #2196F3;
+	border-bottom: 1px solid #eee;
+	font: 10pt verdana; 
+	text-align: left;
+}
+
+#navcontainer a:link, #navlist a:visited  {
+	color: #EEE;
+	text-decoration: none;
+}
+
+#navcontainer a:hover {
+	background-color: #6C88A6;
+	color: #fff;
+}
+
+/*
+	where your text lies inside 
+	with the left column taken into account
+*/
+#content {
+	margin-left:240px;
+	width:80%;	
+	height: auto;
+	vertical-align:top;
+}
+
+
+#content p {
+	font: 12pt verdana;
+	padding:3px 18px 3px 18px;
+	margin:0;
+
+}
+
+/* style for the welcome page
+*/
+#singlecontent {
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 0 0 0 30px;
+	width:auto;
+	height: auto;
+	vertical-align:top;
+}
+
+
+#singlecontent p {
+	font: 10pt verdana;
+	padding:3px 18px 3px 18px;
+	margin:0;
+}
+
+
+
+#footer {
+	width:100%;
+	clear:left;
+	border-top:1px solid #369;
+	border-bottom:1px solid #369;
+	background: #2196F3;
+	padding: 3px 0 3px 0;
+
+}
+
+#footer p {
+	text-align:center;
+	padding-right:8px;
+	font:8pt verdana, arial, sans-serif;
+        
+}
+
+
+
+/*
+
+.new-table {
+	border-collapse: collapse;
+	border-spacing:0;
+    width: 100%;
+	display:table;
+	border:1px solid #ccc
+}
+.new-table tr {	border-bottom:1px solid #ddd}
+
+.new-table tr:nth-child(even){	background-color:#f1f1f1}
+
+.new-table tr:nth-child(off){	background-color:#fff}
+
+.new-table tr:hover {	background-color:#ddd}
+
+.new-table th:first-child, .new-table td:first-child {padding-left:16px;}
+
+.new-table td, .new-table th { 
+	padding:8px 8px;
+	display:table-cell;
+	text-align: left;
+	vertical-align:top
+}
+.new-hoverable tbody tr:hover {background-color:#ccc;}
+
+.new-hoverable li:hover {background-color:#ccc;}
+
+.new-responsive {display:block; overflow-x:auto}
+
+.new-container:after, .new-container:before{content:""; display:table; clear:both}
+
+.new-container {padding:0.01em 16px}
+
+.new-blue { color:#fff!important; background-color: #2196F3!important}
+
+.new-small {	font-size: 12px!important} 
+
+
+/*
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+	text-align: center;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+*/
+
+/*
+#header2 {
+	background: #2196F3;
+	background-position: 100% 0%;
+	width: 100%;
+	height: 40px;
+	border-bottom:1px solid #CCC;
+}
+
+
+was sidebar
+
+#header2-container {
+	width:840px;
+	height: 11px;
+	margin:0 0 0 auto;
+	padding:29px 0 0 0;
+	background: #F0F0F0;
+}
+
+#header2 a {
+
+	text-align: center;
+	color:#2196F3;
+	text-decoration:none;
+}
+
+#header2 a:hover {
+	border-bottom:1px dotted #333;
+	background-color: #000080;
+}
+
+
+
+#header2 ul {
+	list-style-type: none;
+	margin:53px 0 60px 0;
+	margin:52px 0 60px 0;
+	padding:0;
+	float:right;
+}
+
+#header2 li {
+	float:left;
+	display:block;
+	list-style:none;
+}
+
+#header2 li a {
+	display:block;
+	width:92px;
+	text-align:center;
+	color:#2196F3;
+	padding:5px 0 9px 0;
+}
+
+#header2 li a:hover {
+	border:none;
+	padding:6px 0 8px 0;
+}
+*/
